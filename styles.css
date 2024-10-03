@@ -189,7 +189,13 @@ main{
 .skills-content {
     width: 100%;
 }
-  
+.skills-grid h4{
+    color: #16423c0c;
+    position: absolute;
+    top:1500px;
+    left: 50%;
+    font-size: clamp(6rem, 9vw, 20rem);
+}
 .skills-content h2 {
     font-size: clamp(2rem, 4vw, 6rem);
     margin-top: 20px;
@@ -260,7 +266,8 @@ main{
 }
   
 .portfolio-item {
-    background-color: var(--textHover);
+    background-color: var(--hf-bg);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -276,7 +283,7 @@ main{
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
   
 .portfolio-item h3 {
@@ -287,8 +294,115 @@ main{
   
 .portfolio-item p {
     font-size: 1.1rem;
-    color: var(--bg);
-    line-height: 1.6;
+    color: var(--Text);
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+.view-btn{
+    padding: 2px 6px;
+    color: var(--white);
+    background-color: var(--Text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;   
+}
+
+.view-btn:hover {
+    background-color: var(--textHover);
+    color: var(--Text);
+    outline: 1px solid var(--Text);
+    transition: all 0.3s ease-in;
+}
+
+
+.contact-section {
+    padding: 30px 20px;
+    background-color: var(--bg);
+    color: var(--Text);
+    text-align: center;
+}
+
+.contact-content h2 {
+    font-size: clamp(2rem, 4vw, 6rem);
+    margin-bottom: 20px;
+    color: var(--Text);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.contact-content h4{
+    font-size: clamp(2rem, 4vw, 6rem);
+    margin-bottom: 20px;
+}
+.contact-methods {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.contact-methods a {
+    color: var(--Text);
+    text-decoration: none;
+    margin-left: 10px;
+}
+.row-up{
+    display: flex;
+}
+.row-up p i{
+    font-size: 3rem;
+}
+.contact-methods a:hover {
+    color: var(--textHover);
+}
+.bundle-up{
+    display: flex;
+    place-items: center;
+    justify-content: space-around;
+}
+.contact-form {
+    max-width: 600px;
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--Text);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid var(--Text);
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--Text);
+    background-color: var(--white);
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    color: var(--white);
+    background-color: var(--Text);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--textHover);
 }
 
 
