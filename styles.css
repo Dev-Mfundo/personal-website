@@ -1,0 +1,246 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    transition: all 0.2s ease-in;
+}
+:root{
+    --bg: #d3e0cf;
+    --bg2: #A594F9;
+    --Text: #16423C;
+    --white: #ffff;
+    --textHover: #a6c05f;
+    --hf-bg: #d5e5d4;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--bg);
+    padding-top: 50px;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--hf-bg);
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+header .logo a{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--Text);
+    margin: 4px 0px 0px 20px;
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+}
+.nav a{
+    font-size: 1.2rem;
+    margin: 0 6px;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 4px;
+    color: var(--Text);
+}
+.nav a:hover{
+    color: var(--textHover);
+}
+.nav a:focus{
+    color: #E5D9F2;
+}
+.nav a:active{
+    color: var(--Text);
+    text-decoration: underline;
+}
+
+
+main{
+    min-height: 100vh;
+}
+
+
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--Text);
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--bg);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+  
+.hero-content h1 {
+    font-size: clamp(4rem, 6vw, 16rem);
+    margin-bottom: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.hero-content h4{
+    color: #16423c15;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    font-size: clamp(4rem, 6vw, 12rem);
+} 
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 35px;
+    color: var(--Text);
+}
+  
+.btn {
+    padding: 10px 25px;
+    color: var(--white);
+    background-color: var(--Text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+  
+.btn:hover {
+    background-color: var(--textHover);
+    color: var(--Text);
+    outline: 1px solid var(--Text);
+    transition: all 0.3s ease-in;
+}
+  
+.about-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--primary-bg-color);
+    color: #fff;
+    padding: 0 20px;
+}
+  
+.about-content {
+    max-width: 800px;
+}
+  
+.about-content h1 {
+    font-size: clamp(3rem, 6vw, 9rem);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: var(--Text);
+}
+.about-content h4{
+    color: #16423c15;
+    position: absolute;
+    top:400px;
+    left: 10px;
+    font-size: clamp(4rem, 6vw, 12rem);
+}
+.about-content h5{
+    color: #16423c15;
+    height: 0px;
+    position: relative;
+    bottom: 300px;
+    left: 10px;
+    font-size: clamp(4rem, 10vw, 20rem);
+}
+.about-content .intro {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--Text);
+}
+  
+.about-content .about-bio {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--Text);
+}
+
+
+
+.skills-section {
+    min-height: 100vh;
+    background-color: var(--bg1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+  
+.skills-content {
+    width: 100%;
+}
+  
+.skills-content h2 {
+    font-size: clamp(2rem, 4vw, 6rem);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--Text); 
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+  
+.skill-category {
+    margin-bottom: 40px;
+}
+  
+.skill-category h3{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--Text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+  
+.skill-category ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+  
+.skill-category ul li{
+    font-size: 1.2rem;
+    color: var(--Text);
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+  
+.skill-category ul li i{
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: var(--Text);
+}
+
+footer{
+    background-color: var(--hf-bg);
+    padding: 10px 0px;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+    margin-bottom: 0px;
+}
+footer p{
+    margin: 5px 0;
+    font-size: 1.08rem;
+    color: var(--Text);
+}
