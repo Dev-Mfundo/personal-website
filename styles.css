@@ -142,6 +142,7 @@ main{
 .about-content h1 {
     font-size: clamp(3rem, 6vw, 9rem);
     text-transform: uppercase;
+    margin-top: 10px;
     margin-bottom: 10px;
     letter-spacing: 2px;
     font-weight: 800;
@@ -230,6 +231,66 @@ main{
     font-size: 1.5rem;
     color: var(--Text);
 }
+
+
+
+.portfolio-section {
+    padding: 10px 20px;
+    text-align: center;
+}
+  
+.portfolio-content {
+    max-width: 1200px;
+    margin: 100px auto;
+}
+  
+.portfolio-content h2 {
+    font-size: clamp(2rem, 4vw, 6rem);
+    margin-bottom: 40px;
+    color: var(--Text);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+  
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+  
+.portfolio-item {
+    background-color: var(--textHover);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+}
+  
+.portfolio-img {
+    width: 100%;
+    max-width: 320px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+  
+.portfolio-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--Text);
+}
+  
+.portfolio-item p {
+    font-size: 1.1rem;
+    color: var(--bg);
+    line-height: 1.6;
+}
+
 
 footer{
     background-color: var(--hf-bg);
