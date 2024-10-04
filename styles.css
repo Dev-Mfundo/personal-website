@@ -41,8 +41,11 @@ header .logo a{
 }
 @media only screen and (max-width: 600px) {
     header .logo a{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         position: absolute;
+    }
+    .nav a{
+        font-size: 1.2rem;
     }
 
 }
