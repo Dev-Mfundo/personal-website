@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(".toggle").on("click",function(){
-        $(".nav").toggle();
+        $(".nav").toggle();  
     })
 
     if ($(window).width() <= 600) {
