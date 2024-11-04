@@ -4,26 +4,27 @@
     transition: all 0.2s ease-in;
 }
 :root{
-    --bg: #d3e0cf;
-    --bg2: #A594F9;
-    --Text: #16423C;
+    --darkg:#0a1f1c;
+    --bg: #16423c;
+    --bg2: #255a46;
+    --Text: #c4dad2;
     --white: #ffff;
-    --textHover: #a6c05f;
-    --hf-bg: #d5e5d4;
+    --textHover: #185742;
+    --hf-bg: #2d816f;
 
 }
 body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--bg);
+    background-color:var(--darkg);
     padding-top: 50px;
     min-height: 100vh;
 }
 header{
     display: flex;
     justify-content: space-between;
-    background-color: var(--hf-bg);
+    background-color:var(--darkg);
     padding: 10px;
     width: 100%;
     position: fixed;
@@ -126,7 +127,7 @@ main{
     padding: 0 20px;
     position: relative;
     overflow: hidden;
-    background-color: var(--bg);
+    background-color:var(--darkg);
 }
 
 .hero-content {
@@ -148,20 +149,20 @@ main{
     font-size: clamp(4rem, 6vw, 12rem);
 } 
 .hero p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 35px;
-    color: var(--Text);
+    color: var(--white);
 }
   
 .btn {
-    padding: 10px 25px;
+    padding: 10px 15px;
     color: var(--white);
-    background-color: var(--Text);
+    background-color: var(--hf-bg);
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
     font-size: 1.2rem;
-    border-radius: 30px;
+    border-radius: 10px;
     transition: background-color 0.3s ease;
 }
   
@@ -189,7 +190,7 @@ main{
 }
   
 .about-content {
-    max-width: 800px;
+    max-width: 900px;
 }
   
 .about-content h1 {
@@ -223,7 +224,7 @@ main{
 }
   
 .about-content .about-bio {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.7;
     color: var(--Text);
 }
@@ -315,7 +316,7 @@ main{
 
 
 .portfolio-section {
-    padding: 10px 20px;
+    padding: 50px 20px;
     text-align: center;
 }
   
@@ -344,8 +345,8 @@ main{
 }
   
 .portfolio-item {
-    background-color: var(--hf-bg);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: none;
+    box-shadow: 0px 5px 15px rgba(66, 66, 66, 0.1);
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -371,7 +372,7 @@ main{
 }
   
 .portfolio-item p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--Text);
     line-height: 1.2;
     margin-bottom: 5px;
@@ -379,7 +380,7 @@ main{
 .view-btn{
     padding: 2px 6px;
     color: var(--white);
-    background-color: var(--Text);
+    background-color: var(--hf-bg);
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
@@ -397,22 +398,22 @@ main{
 
 
 .contact-section {
-    padding: 10px;
-    background-color: var(--bg);
-    color: var(--Text);
+    padding: 50px 20px;
+    background-color: var(--darkg);
+    color: var(--darkg);
     text-align: center;
+    min-height: 70vh;
 }
 
 .contact-content h2 {
     font-size: clamp(2rem, 4vw, 6rem);
-    margin-bottom: 0px;
+    margin-bottom: 30px;
     color: var(--Text);
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
-.contact-content h4{
-    font-size: clamp(2rem, 4vw, 6rem);
-    margin-bottom: 20px;
+.contact-content p{
+    font-size: 1.5rem;
 }
 .contact-methods {
     margin-bottom: 10px;
@@ -436,29 +437,10 @@ main{
 .contact-methods a:hover {
     color: var(--textHover);
 }
-.bundle-up{
-    display: flex;
-    place-items: center;
-    justify-content: space-around;
-}
-@media only screen and (max-width: 768px){
-    .bundle-up{
-        flex-direction: column;
-    }
-    .contact-content h4{
-        padding-top: 40px;
-    }
-    .contact-content h2 {
-        padding-top: 30px;
-    }
-    .row-up{
-        margin-bottom: 10px;
-    }
-    .row-up p{
-        margin: 0px 10px;
-    }
-}
+
 .contact-form {
+    display: block;
+    margin: 0 auto;
     max-width: 600px;
     background-color: var(--white);
     padding: 25px;
@@ -474,24 +456,25 @@ main{
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: var(--Text);
+    font-size: 1.4rem;
 }
 
 .form-group input,
 .form-group textarea {
-    width: 300px;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
     padding: 10px;
     border: 1px solid var(--Text);
     border-radius: 5px;
     font-size: 1rem;
-    color: var(--Text);
     background-color: var(--white);
 }
 
 .submit-btn {
     padding: 10px 20px;
     color: var(--white);
-    background-color: var(--Text);
+    background-color: var(--textHover);
     border: none;
     border-radius: 5px;
     font-size: 1.2rem;
@@ -505,7 +488,7 @@ main{
 
 
 footer{
-    background-color: var(--hf-bg);
+    background-color: var(--darkg);
     padding: 10px 0px;
     text-align: center;
     width: 100%;
