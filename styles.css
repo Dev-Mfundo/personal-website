@@ -195,7 +195,7 @@ main{
     font-size: clamp(4rem, 6vw, 12rem);
 } 
 .hero p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 35px;
     color: var(--white);
 }
@@ -274,7 +274,7 @@ main{
 }
   
 .about-content .about-bio {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.7;
     color: var(--Text);
 }
@@ -462,7 +462,7 @@ main{
   }
   
   .portfolio-item p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: var(--Text);
     line-height: 1.2;
     margin-bottom: 5px;
@@ -504,7 +504,7 @@ main{
     letter-spacing: 1.5px;
 }
 .contact-content p{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 .contact-methods {
     margin-bottom: 10px;
@@ -588,7 +588,7 @@ footer{
 }
 footer p{
     margin: 5px 0;
-    font-size: 1.08rem;
+    font-size: 1.1rem;
     color: var(--Text);
 }
 @media only screen and (max-width: 415px){
