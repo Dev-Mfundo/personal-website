@@ -137,6 +137,22 @@ main{
 .hero-content {
     max-width: 800px;
 }
+.cv-dwn{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    color: var(--Text);
+    outline: 1px solid var(--Text);
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    transition: 0.1s;
+}
+.cv-dwn:hover{
+    outline: 1px solid var(--textHover);
+    color: var(--textHover);
+    transition: 0.1s;
+}
 .social-icons {
     display: flex;
     position: absolute;
@@ -393,21 +409,30 @@ main{
   .portfolio-item:hover {
     transform: translateY(-10px);
   }
-  
+
   .portfolio-img {
     width: 100%;
-    max-width: 320px;
-    height: 200px;
-    object-fit: cover;
+
+    object-fit: contain;
     border-radius: 8px;
     margin-bottom: 10px;
     opacity: 0;
     transition: opacity 0.3s ease;
   }
-  
   .portfolio-item:hover .portfolio-img {
     opacity: 1;
   }
+/* @media only screen and (min-width: 768px){
+    .portfolio-item:hover .portfolio-img {
+    transform: scaleX(1.1);
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    }
+}
+     */
   
   .overlay {
     position: absolute;
