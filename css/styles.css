@@ -12,6 +12,7 @@
     --textHover: #185742;
     --hf-bg: #2d816f;
 }
+
 body{
     display: flex;
     flex-direction: column;
@@ -118,8 +119,18 @@ main{
     min-height: 100vh;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
-
+#fade-in{
+    animation: fadeIn 1.5s ease-in;
+}
 .hero {
     min-height: 100vh;
     display: flex;
@@ -627,3 +638,4 @@ footer p{
         min-height: 95vh;
     }    
 }
+
