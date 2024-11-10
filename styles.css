@@ -11,7 +11,6 @@
     --white: #ffff;
     --textHover: #185742;
     --hf-bg: #2d816f;
-
 }
 body{
     display: flex;
@@ -179,6 +178,13 @@ main{
   .social-icons i {
     display: inline-block;
   }
+@media only screen and (max-width: 859px) and (orientation: landscape){
+    .social-icons {
+        bottom: -7%;
+        right: 20px;
+    }
+
+}
 
 .hero-content h1 {
     font-size: clamp(4rem, 6vw, 16rem);
