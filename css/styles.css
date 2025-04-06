@@ -364,7 +364,7 @@ main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
     gap: 10px; 
-    margin: 20px 10px;
+    margin:20px 10px;
     background-color: var(--white);
     padding: 20px;
     z-index: 1;
@@ -388,13 +388,15 @@ main{
 }
 
   
-.skill-category ul li{
+.skill-category ul li {
     font-size: 1.3rem;
     color: var(--bg2);
     margin: 5px;
-    display: flex;
-    align-items: center;
+    display: grid; 
+    place-items: left;
+    align-content: center;
 }
+
   
 .skill-category ul li i{
     margin-right: 10px;
