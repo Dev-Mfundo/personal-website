@@ -61,7 +61,7 @@ header .logo a{
     display: grid; 
     grid-auto-flow: column; 
     position: absolute;
-    top: 60px;
+    top: 15px;
     right: 13px;
     text-align: end;
     z-index: 2000;
@@ -94,9 +94,9 @@ header .logo a{
     header{
         height: 45px;
     }
-    .navbar{
+    /* .navbar{
         background-color: var(--hf-bg);
-    }
+    } */
     .nav {
         display: grid;
         grid-auto-flow: row; 
