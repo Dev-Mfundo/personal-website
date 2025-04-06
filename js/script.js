@@ -14,3 +14,6 @@ $(document).ready(function() {
     });
 });
 
+const year = new Date().getFullYear()
+const fyear = document.getElementById('time')
+fyear.textContent = `© ${year} Aaron Jiane`
