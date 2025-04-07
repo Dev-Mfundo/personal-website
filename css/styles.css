@@ -248,6 +248,28 @@ main{
 .btn:active{
     outline: 1px solid var(--Text);
 }
+
+#scroll-up-btn {
+    text-align: center;
+    position: fixed;
+    bottom: 55px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 2rem;
+    background-color: var(--white);
+    color: var(--darkg);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    font-weight: 900;
+}
+#scroll-up-btn:hover {
+    background-color: var(--hf-bg);
+    color:var(--white);
+}
+
+
 @media only screen and (max-width: 339px){
     .social-icons {
         bottom: -5%;
@@ -257,6 +279,12 @@ main{
     }
 }
 @media  only screen and (max-width: 768px){
+    #scroll-up-btn {
+        padding: 8px 12px;
+        font-size: 2rem;
+        bottom: 55px;
+        right: 15px;
+    }
     .about-content h1 {
         padding-top: 50px;
     }
