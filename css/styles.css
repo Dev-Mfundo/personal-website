@@ -630,7 +630,7 @@ main{
     transition: all 0.3s ease-in;
 } */
   
-@media only screen and (max-width: 339px){
+@media only screen and (max-width: 368px){
     .portfolio-item{
         display: block;
         margin: 0 auto;
